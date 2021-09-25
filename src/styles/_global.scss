@@ -1,7 +1,11 @@
 @use 'variables';
+:root{
+    --background: #{variables.$bg};
+    --text: #{variables.$text};
+}
 body{
     margin:0;
-    background-color:variables.$bg;
+    background-color:var(--background);
     color:var(--text);
     font-size: 26px;
 }
@@ -12,7 +16,4 @@ main{
 }
 button{
     font-size:1.5rem;
-}
-ul{
-    list-style-image: url("../images/sample-48x32.png");
 }

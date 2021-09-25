@@ -1,7 +1,6 @@
 import '../styles/index.scss';
-import Recipes from './Recipes';
-import samplepng from '../images/sample.png';
-import samplesvg from '../images/sample.svg';
+import Switch from './Switch';
+
 const App = () => {
     return (
         <>
@@ -9,10 +8,9 @@ const App = () => {
           <main>
             <section>
                 <h1>React Webpack Template SWC</h1>
+                <p>Hello. Welcome to this React project using Webpack. The example below is a simple component emulating an On/Off switch.</p>
             </section>
-            <img src={samplepng} alt="sample png file" width="250" />
-            <img src={samplesvg} alt="sample svg file" width="250" />
-            <Recipes />
+            <Switch />
           </main>
         </>
     );
