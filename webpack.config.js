@@ -6,7 +6,8 @@ const path = require('path');
 
 let mode = 'development';
 let target = 'web';
-const plugins = [
+
+onst plugins = [
   new CleanWebpackPlugin(),
   new MiniCssExtractPlugin(),
   new HtmlWebpackPlugin({
@@ -69,7 +70,6 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
   },
-  devtool: "source-map",
   devServer: {
     static: {
       directory: path.join(__dirname, 'dist'),
@@ -78,4 +78,5 @@ module.exports = {
     port: 8080,
     hot: true,
   },
+  devtool: "source-map",  
 }

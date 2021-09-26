@@ -1,5 +1,4 @@
 import '../styles/index.scss';
-import Switch from './Switch';
 
 const App = () => {
     return (
@@ -8,9 +7,8 @@ const App = () => {
           <main>
             <section>
                 <h1>React Webpack Template SWC</h1>
-                <p>Hello. Welcome to this React project using Webpack. The example below is a simple component emulating an On/Off switch.</p>
+                <p>Hello. Welcome to this React template using Webpack, Babel, SASS, and PostCSS.</p>
             </section>
-            <Switch />
           </main>
         </>
     );
